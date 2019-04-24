@@ -8,16 +8,12 @@ import re
 from urllib.request import urlopen
 
 def main():
-
-    # Fetch html
-
+    # Start with given
     next_nothing('48827')
 
-    # with urlopen("http://www.pythonchallenge.com/pc/def/linkedlist.php?nothing=%s" % nothing) as html:
-    #
-    #     nothing = html.find(r'and the next nothing is (/d+)')
-    #     print html
-    #     print nothing
+
+# Limited to 400 iterations as sugested
+# Recursive approach
 
 def next_nothing(nothing, counter=400):
 
@@ -29,7 +25,11 @@ def next_nothing(nothing, counter=400):
             print(html)
             # print(next)
 
+
+        # Stop when there's no next nothing
         if next:
+
+            # Follow intructions in hint at nothing = 16044
             if next[0] == '16044':
                 next[0] = '8022'
 
