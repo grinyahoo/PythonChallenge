@@ -11,7 +11,7 @@ def main():
     # Start with given
     next_nothing('48827')
 
-# Limited to 400 iterations as sugested
+# Limited to 400 iterations as suggested
 # Recursive approach
 def next_nothing(nothing, counter=400):
 
