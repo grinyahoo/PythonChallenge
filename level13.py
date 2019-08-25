@@ -1,5 +1,6 @@
 # Python Challenge level 13
 # Call evil
+# Bert is evil
 #
 # http://www.pythonchallenge.com/pc/return/disproportional.html
 #
